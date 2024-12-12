@@ -1,3 +1,6 @@
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+
 /* This palette of colors comes from LOSPEC, made by the user "Kerrie Lake", name is "RUSTIC GB PALETTE" */
 $rustic-gb-colors: (
   "bleached_cedar": #2c2137,
@@ -5,5 +8,7 @@ $rustic-gb-colors: (
   "wax_flower": #edb4a1,
   "melon_twist": #a96868,
 );
+
+$theme-colors: map-merge($rustic-gb-colors, $theme-colors);
 
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
